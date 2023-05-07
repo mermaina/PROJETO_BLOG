@@ -1,0 +1,21 @@
+#random-recipe-button {
+  font-size: 24px;
+  padding: 10px;
+  background-color: #AF736E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+#random-recipe-button:hover{
+  background-color: #c59996;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5em;
+}

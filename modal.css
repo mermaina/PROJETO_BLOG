@@ -1,0 +1,91 @@
+/*configs do modal*/
+.btnOpenModal {
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c59996;
+  color: white;
+  cursor: pointer;
+  float: right;
+  margin-right: 900px;
+  
+
+
+}
+
+@media(max-width:900px){
+  .btnOpenModal{
+    margin-left: -100px;
+  }
+}
+
+.btnOpenModal:hover{
+  background-color:#DFC6C3;
+  transition: 0.3s ease-in;
+}
+
+hr {
+  border: 0px;
+  border-top: 1px solid lightgray;
+}
+
+.modal-container {
+  width: 100vw;
+  position: fixed;
+  top: 30px;
+  display: none;
+  z-index: 999;
+  justify-content: center;
+}
+
+.active {
+  display: flex;
+}
+
+.active .modal {
+  animation: modal .4s;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btns button {
+  font-size: bolder;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btnClose {
+  background-color: #AF736E;
+ }
+
+ @media (max-width: 500px) {
+  .modal {
+    padding: 10px;
+    width: 80%;
+  }   
+
+  form, .btns button {
+    font-size: smaller;
+  }
+ }

@@ -1,0 +1,320 @@
+@import url(slides.css);
+@import url(menu.css);
+@import url(dropdown.css);
+@import url(receitaaleatoria.css);
+@import url(comentarios.css);
+
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #fef6ec;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+
+#sobre {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+
+.sobre-autora {
+  padding: 40px;
+  width: 60%;
+}
+
+#titulo-inicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-autora {
+  font-size: 40px;
+  color: #c59996;
+}
+
+.autora-imagem {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-conteudo {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #c59996;
+  line-height: 1.5em;
+}
+
+.welcome {
+  font-family: "Rochester", sans-serif;
+  font-size: 5rem;
+  color: #c59996;
+}
+
+.welcome-texto {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  padding-left: 180px;
+  padding-right: 180px;
+  text-align: center;
+  line-height: 1.5em;
+  color: #c59996;
+}
+
+#receitas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px;
+  padding-top: 60px;
+  gap: 60px;
+}
+
+.receita {
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+.receita:hover {
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease-in-out;
+}
+
+.imagem-bolo {
+  height: 250px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.link-titulo-receita {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  text-decoration: none;
+  color: #c59996;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#mensagem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #c59996;
+}
+
+.mensagem-conteudo {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.receita-conteudo {
+  padding: 40px;
+}
+
+.imagem-receita {
+  height: 400px;
+  border-radius: 7px;
+}
+
+.receita-conteudo-titulo {
+  width: 100%;
+}
+
+.receita-conteudo-imagem {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.titulo-conteudo-receita {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #c59996;
+  text-align: center;
+}
+
+.conteudo-receita {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #c59996;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.receita-ingredientes {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 33px;
+}
+
+.receita-ingredientes-titulo {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  color: #c59996;
+}
+
+.lista-ingredientes-conteudo {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #654c4a;
+}
+
+.modo-de-preparo {
+  font-size: 40px;
+  color: #c59996;
+  text-align: center;
+}
+
+.preparo {
+  font-size: 20px;
+  color: #654c4a;
+  text-align: center;
+  padding: 0 40px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 33px;
+}
+
+.cabecalho-formulario {
+  color: #c59996;
+  font-size: 40px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8px;
+}
+
+.field-radio {
+  padding-bottom: 8px;
+}
+
+.form-campo {
+  height: 25px;
+  width: 500px;
+  border-radius: 5px;
+  border-color: #c59996;
+}
+
+.form-campo-text-area {
+  resize: none;
+  width: 500px;
+  border-radius: 5px;
+}
+
+.form-botao-enviar {
+  width: 500px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #c59996;
+  border: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.form-botao-enviar:hover {
+  background-color: #654c4a;
+}
+
+@media (max-width: 768px) {
+  #sobre {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  #receitas {
+    justify-content: center;
+    padding: 0;
+  }
+  #mensagem {
+    width: 100%;
+  }
+  .autora-imagem {
+    width: 100%;
+    justify-content: center;
+  }
+  .sobre-autora {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .titulo-autora {
+    width: 100%;
+    justify-content: center;
+  }
+  .sobre-conteudo {
+    width: 100%;
+    font-size: 18px;
+  }
+  .welcome-texto {
+    padding: 0 10px;
+  }
+  .mensagem-conteudo {
+    padding: 0 10px;
+    text-align: center;
+  }
+  .receita-conteudo-imagem {
+    max-width: 100%;
+  }
+  .imagem-receita {
+    width: 100%;
+  }
+  .receita-ingredientes {
+    flex-direction: column;
+  }
+  .receita-conteudo {
+    padding-top: 0;
+  }
+  .modo-de-preparo {
+    text-align: left;
+  }
+  .preparo-conteudo {
+    text-align: left;
+  }
+  .preparo {
+    padding: 10px;
+  }
+  .cabecalho-formulario {
+    text-align: center;
+    font-size: 30px;
+  }
+  .form-campo,
+  .form-campo-text-area,
+  .form-botao-enviar {
+    width: 300px;
+  }
+}

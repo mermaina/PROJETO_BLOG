@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale-1, minimum-scale=1, maximum-scale=1, user-scalatable=0"
+    />
+    <title>Chef Lili</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rochester&display=swap"
+    />
+  </head>
+  <body>
+    <!-- início-pagina-inteira-->
+    <div id="pagina-inteira">
+      <!-- inicio-logo -->
+      <div class="logo">
+        <img src="/imagens/chefe_lily.png" />
+      </div>
+      <!-- fim-logo -->
+      <!-- inicio-menu -->
+      <div id="menu-barra">
+        <a href="index.html" class="menu">Home</a>
+        <a href="sobre.html" class="menu">Sobre</a>
+        <a href="receitas.html" class="menu">Receitas</a>
+      </div>
+      <!-- fim-menu -->
+      <!-- inicio-banner -->
+      <div>
+        <img src="imagens/banner_pagina_receita.jpg" class="banner" />
+      </div>
+      <!-- fim-banner -->
+      <div class="receita-conteudo">
+        <div class="receita-conteudo-titulo">
+          <h2 class="titulo-conteudo-receita">Muffins</h2>
+        </div>
+        <div class="receita-conteudo-imagem">
+          <img src="/imagens/muffin.jpg" class="imagem-receita" />
+        </div>
+        <div class="receita-ingredientes">
+          <div>
+            <h2 class="receita-ingredientes-titulo">Ingredientes</h2>
+            <ul class="lista-ingredientes">
+              <li class="lista-ingredientes-conteudo">
+                1 e 1/2 xícaras (chá) de farinha de trigo
+              </li>
+              <li class="lista-ingredientes-conteudo">
+                1/2 xícara (chá) de açúcar1/2 xícara (chá) de açúcar
+              </li>
+              <li class="lista-ingredientes-conteudo">1/2 xícara (chá) de cacau em pó sem açúcar</li>
+              <li class="lista-ingredientes-conteudo">
+                1 colher (sopa) de fermento em pó
+              </li>
+              <li class="lista-ingredientes-conteudo">
+                1/2 colher (chá) de bicarbonato de sódio
+              </li>
+              <li class="lista-ingredientes-conteudo">
+                1/4 colher (chá) de sal
+              </li>
+              <li class="lista-ingredientes-conteudo">
+                1 xícara (chá) de leite
+              </li>
+              <li class="lista-ingredientes-conteudo">
+                1/3 xícara (chá) de óleo vegetal
+              </li>
+              <li class="lista-ingredientes-conteudo">
+                1 ovo
+              </li>
+              <li class="lista-ingredientes-conteudo">
+                1 colher (chá) de essência de baunilha
+              </li>
+              <li class="lista-ingredientes-conteudo">
+                1 xícara (chá) de gotas de chocolate meio amargo
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="preparo">
+          <h2 class="modo-de-preparo">Modo de Preparo</h2>
+          <p class="preparo-conteudo">
+            Preaqueça o forno a 180°C e forre uma forma de muffins com forminhas de papel.
+Em uma tigela grande, misture a farinha de trigo, o açúcar, o cacau em pó, o fermento em pó, o bicarbonato de sódio e o sal.
+Em outra tigela, misture o leite, o óleo vegetal, o ovo e a essência de baunilha.
+Adicione a mistura líquida à mistura de farinha e mexa até que esteja bem combinado.
+Adicione as gotas de chocolate e misture.
+Divida a massa igualmente entre as forminhas de muffins.
+Asse por cerca de 20 a 25 minutos, ou até que os muffins estejam dourados e firmes.
+Retire do forno e deixe esfriar na forma por alguns minutos antes de remover e colocar em uma grade para esfriar completamente.
+Sirva e aproveite seus muffins de chocolate!
+
+          </p>
+        </div>
+      </div>    
+
+      <div id="mensagem">
+        <p class="mensagem-conteudo">
+          Espalhando o amor através da confeitaria!
+        </p>
+      </div>
+      <div class="formulario">
+        <h2 class="cabecalho-formulario">Mande uma mensagem!</h2>
+        <form
+          method="post"
+          action="https://getform.io/f/d2b07986-972f-4f78-8566-1c8f552eadd0"
+        >
+          <div class="field">
+            <label for="form-nome">Nome Completo*</label>
+            <input
+              type="text"
+              placeholder="Digite o seu nome"
+              id="form-nome"
+              name="form-nome"
+              class="form-campo"
+              required
+              minlength="8"
+              maxlength="20"
+            />
+          </div>
+          <div class="field">
+            <label for="form-email">E-mail*</label>
+            <input
+              type="email"
+              placeholder="Digite seu e-mail"
+              id="form-email"
+              name="form-email"
+              class="form-campo"
+              required
+            />
+          </div>
+          <div class="field-radio">
+            <label for="form-radio-duvida">Dúvida</label>
+            <input
+              type="radio"
+              id="form-radio-duvida"
+              name="form-radio"
+              value="duvida"
+              checked
+            />
+            <label for="form-radio-orcamento">Orçamento</label>
+            <input
+              type="radio"
+              id="form-radio-orcamento"
+              name="form-radio"
+              value="orcamento"
+            />
+          </div>
+          <div class="field">
+            <textarea
+              placeholder="Digite sua mensagem"
+              name="form-mensagem"
+              class="form-campo-text-area"
+              rows="8"
+              required
+              minlength="20"
+              maxlength="200"
+            ></textarea>
+          </div>
+          <div>
+            <input
+              type="submit"
+              value="Enviar Mensagem"
+              class="form-botao-enviar"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+   
+  </body>
+</html>

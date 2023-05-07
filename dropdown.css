@@ -1,0 +1,212 @@
+/* estilo do form */
+:root {
+  --input-linear: linear-gradient(120deg, #844C48, white);
+  --input-error: red;
+  --button-linear: linear-gradient(120deg, #844C48, #DFC6C3, #844C48);
+  --button-disabled: #acacac;
+  --button-success: rgb(18, 151, 107);
+  --white: #fff;
+  --black: #303030;
+  --gray: #929292;
+  --light-gray: #cfcfcf;
+  --border-height: 1px;
+}
+
+.modal-container .modal h2{
+color: #c59996;
+}
+
+.login__container {
+  min-height: 400px;
+  width: 300px;
+  background-color: var(--white);
+  box-sizing: border-box;
+  padding: 32px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login__title {
+  margin-bottom: 32px;
+  color: var(--black);
+}
+
+.login__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__input {
+  height: 48px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 8px;
+  border: unset;
+  outline: none;
+  position: relative;
+}
+
+.login__input-border {
+  height: var(--border-height);
+  width: 100%;
+  margin-bottom: 16px;
+  background: var(--light-gray);
+  transition: .3s ease-in-out;
+}
+
+.login__input-border::after {
+  content: '';
+  display: block;
+  height: var(--border-height);
+  width: 0;
+  margin-bottom: 16px;
+  background: var(--input-linear);
+  transition: .3s ease-in-out;
+}
+
+.login__input:focus + .login__input-border::after {
+  width: 100%;
+}
+
+.login__input-border.error {
+  background: var(--input-error);
+}
+
+.login__input-border.error::after {
+  background: var(--input-error);
+}
+
+.login__submit {
+  height: 48px;
+  width: 100%;
+  padding-left: 8px;
+  outline: none;
+  position: relative;
+  background: var(--button-linear);
+  background-size: 200%;
+  margin-bottom: 32px;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: bold;
+  border: unset;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.login__submit:disabled {
+  background: var(--button-disabled);
+  cursor: not-allowed;
+}
+
+.login__submit:hover {
+  background-position: right;
+}
+
+.login__submit.success {
+  background: var(--button-success);
+}
+
+.login__submit.error {
+  background: var(--input-error);
+}
+
+.login__reset {
+  font-size: 12px;
+  color: var(--gray);
+  text-decoration: none;
+}
+.modal-container {
+  width: 100vw;
+  position: fixed;
+  top: 30px;
+  display: none;
+  z-index: 999;
+  justify-content: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  width: 20%;
+}
+
+.active {
+  display: flex;
+}
+
+.active .modal {
+  animation: modal .4s;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btns button {
+  font-size: medium;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btnClose {
+  background-color:#AF736E;
+ }
+
+ @media (max-width: 500px) {
+  .modal {
+    padding: 10px;
+    width: 80%;
+  }   
+
+  span, .btns button {
+    font-size: smaller;
+  }
+ }
+
+/*configs do modal*/
+.btnOpenModal {
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c59996;
+  color: white;
+  cursor: pointer;
+  float: right;
+  margin-right: 300px;
+  
+}
+
+.btnOpenModal:hover{
+  background-color:#DFC6C3;
+  transition: 0.3s ease-in;
+}
+
+
